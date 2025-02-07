@@ -1,0 +1,5 @@
+Spacy: 01-02-2021
+pytoch-lightning: 29-03-2022
+Torch + Torchvision: 08-05-2023
+HF hub: 26-09-2023
+CLIP

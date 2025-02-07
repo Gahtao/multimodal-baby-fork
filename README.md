@@ -9,7 +9,7 @@ First make sure you're using:
 * Python 3.9.21
 * Pip 23.3.2
 
-Then run in the following commandline within your conda environment:
+Then run in the following commandline within your conda environment (you may have to change the cudatoolkit version depending on your GPU):
 ```commandline
 conda install --yes -c pytorch pytorch=1.7.1 torchvision cudatoolkit=11.0
 ```
