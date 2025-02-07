@@ -5,15 +5,20 @@ This repository contains code and models from the following papers:
 - Wang, W., Vong, W. K., Kim, N., & Lake, B. M. (2023). Finding Structure in One Child's Linguistic Experience. *Cognitive Science*.
 
 ## Requirements
-* torch==2.0.1
-* torchvision==0.15.2
-* pytorch-lightning==1.6.0
-* spacy==3.0.0
-* clip==1.0
-* huggingface_hub==0.17.3
-* Some other packages for preprocessing, evaluation and visualization may be required, see `requirements.txt`
+First make sure you're using:
+* Python 3.9.21
+* Pip 23.3.2
 
-Slightly older or newer versions will probably work as well.
+Then run in the following commandline within your conda environment:
+```commandline
+conda install --yes -c pytorch pytorch=1.7.1 torchvision cudatoolkit=11.0
+```
+Finally, perform:
+```commandline
+pip install -r "requirements.txt"
+```
+
+For a more complete requirements file, see `reqruirements_full.txt`
 
 ## Usage
 Usage of CVCL follows the [CLIP](https://github.com/openai/CLIP) API. The following code downloads the pre-trained CVCL model (trained on the SAYCam-S dataset) from HuggingFace Hub, and then encodes images and utterances using the model:
