@@ -6,46 +6,46 @@ This repository contains code and models from the following papers:
 
 ## Installation
 
-This project uses Python 3.8, and [`uv`](https://docs.astral.sh/uv/) for dependency management. Follow these steps to set up the environment:
+This is a fork of the original project and uses `Conda` instead of `uv`. Follow these steps to set up the environment:
 
-1. Install `uv`:
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
+1. Install `Conda`:
+Install a [Conda](https://www.anaconda.com/download/success) environment of choice. I used miniconda for Windows, as well as Anaconda for Linux.
 
 2. Clone the repository:
 ```bash
-git clone git@github.com:wkvong/multimodal-baby.git
-cd multimodal-baby
+git clone git@github.com:Gahtao/multimodal-baby-fork.git
+cd multimodal-baby-fork
 ```
 
-3. Create and set up the virtual environment:
+3. Create and set up the conda environment:
 ```bash
-# Create a virtual environment in this folder
-uv venv
-
-# Optional: If you need to create the environment in a custom location, run the following commands instead:
-uv venv ${UV_CACHE_DIR}/multimodal_baby_env
-export VIRTUAL_ENV=${UV_CACHE_DIR}/multimodal_baby_env
-
-# Install dependencies
-uv sync
+# Create a virtual environment using the environment.yml file
+conda env create -f environment.yml
 ```
 
-4. Install additional requirements:
+4. Activate the environment
+```bash
+conda activate multimodal-baby
+```
+
+5. Install additional requirements:
 ```bash
 # Install CLIP from source
-uv pip install git+https://github.com/openai/CLIP.git
+pip install git+https://github.com/openai/CLIP.git
 
 # Download spaCy language model
-uv run -- spacy download en_core_web_sm
+conda run spacy download en_core_web_sm
 ```
 
-5. Test the installation:
+6. Test the installation:
 ```bash
 # Run the demo script to verify everything is working
-uv run demo.py
+python demo.py
 ```
+
+7. Done!
+
+IMPORTANT: Reactivate the environment every time you wish to use it, as in step 4.
 
 ## Usage
 Usage of CVCL follows the [CLIP](https://github.com/openai/CLIP) API. The following code downloads the pre-trained CVCL model (trained on the SAYCam-S dataset) from HuggingFace Hub, and then encodes images and utterances using the model:
