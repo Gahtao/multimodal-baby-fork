@@ -35,16 +35,15 @@ import spacy
 import clip
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 # directories and filenames
-DATA_DIR = Path("/home/u650228/multimodal-baby-fork/data")
+DATA_DIR = Path("/home/u650228/multimodal-baby-fork/data/S_multimodal")
 GSHEETS_CREDENTIALS_FILENAME = DATA_DIR / "credentials.json"
 TRANSCRIPT_LINKS_FILENAME = DATA_DIR / "SAYCam_transcript_links.csv"
 TRANSCRIPTS_DIRNAME = DATA_DIR / "transcripts"
 PREPROCESSED_TRANSCRIPTS_DIRNAME = DATA_DIR / "preprocessed_transcripts_5fps"
-RAW_VIDEO_DIRNAME = "/misc/vlgscratch4/LakeGroup/shared_data/S_videos_annotations/S_videos/"
-LABELED_S_DIRNAME = "/misc/vlgscratch4/LakeGroup/shared_data/S_clean_labeled_data_1fps_5"
-FILTERED_LABELED_S_DIRNAME = "/misc/vlgscratch4/LakeGroup/shared_data/S_clean_labeled_data_clip_filtered"
+RAW_VIDEO_DIRNAME = "/home/u650228/multimodal-baby-fork/data/S_videos_annotations/S_videos/"
+LABELED_S_DIRNAME = "/home/u650228/multimodal-baby-fork/data/S_clean_labeled_data_1fps_5"
+FILTERED_LABELED_S_DIRNAME = "/home/u650228/multimodal-baby-fork/data/S_clean_labeled_data_clip_filtered"
 EXTRACTED_FRAMES_DIRNAME = DATA_DIR / "train_5fps"
 EVAL_FRAMES_DIRNAME = DATA_DIR / "eval"
 FILTERED_EVAL_FRAMES_DIRNAME = DATA_DIR / "eval_filtered"

@@ -62,7 +62,7 @@ class WordRatings:
         items[d.columns] = d
 
 
-concreteness_data = WordRatings("/misc/vlgscratch4/LakeGroup/shared_data/Concreteness ratings Brysbaert2014.xlsx")
-norm_data = WordRatings("/misc/vlgscratch4/LakeGroup/shared_data/VanArsdall_Blunt_NormData.xlsx", sheet_name=1)
+concreteness_data = WordRatings("/home/u650228/multimodal-baby-fork/data/Concreteness ratings Brysbaert2014.xlsx")
+norm_data = WordRatings("/home/u650228/multimodal-baby-fork/data/VanArsdall_Blunt_NormData.xlsx", sheet_name=1)
 
 conc_field = 'Conc.M'

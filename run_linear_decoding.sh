@@ -20,6 +20,6 @@ seeds=(0 1 2)
 
 for subset in ${subsets[@]}; do
     for seed in ${seeds[@]}; do
-        srun python linear_decoding.py --train_dir '/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal/eval/dev' --test_dir '/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal/eval/test' --num-classes 22 --epochs 100 --subset ${subset} --seed ${seed}
+        srun python linear_decoding.py --train_dir '/home/u650228/multimodal-baby-fork/data/S_multimodal/eval/dev' --test_dir '/home/u650228/multimodal-baby-fork/data/S_multimodal/eval/test' --num-classes 22 --epochs 100 --subset ${subset} --seed ${seed}
     done
 done

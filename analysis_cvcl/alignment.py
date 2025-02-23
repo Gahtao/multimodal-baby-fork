@@ -61,7 +61,7 @@ def main(args):
         model.eval()
 
     # get paths and categories
-    DATA_DIR = Path("/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal")
+    DATA_DIR = Path("/home/u650228/multimodal-baby-fork/data/S_multimodal")
     EVALUATION_FRAMES_DIR = DATA_DIR / "eval" / "test"
     eval_categories = sorted(os.listdir(EVALUATION_FRAMES_DIR))
      

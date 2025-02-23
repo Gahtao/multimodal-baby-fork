@@ -11,11 +11,11 @@ import seaborn.objects as so
 import cv2 as cv
 import scipy.stats as stats
 
-DATA_DIR = Path("/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal")
-VIDEO_DIR = Path("/misc/vlgscratch4/LakeGroup/shared_data/S_videos_annotations/S_videos")
-LABELED_S_DIR = Path("/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal/eval/dev")
-OBJECT_CATEGORIES_ORIGINAL_DIR = Path("/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal/object_categories_original")
-OBJECT_CATEGORIES_DIR = Path("/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal/object_categories")
+DATA_DIR = Path("/home/u650228/multimodal-baby-fork/data/S_multimodal")
+VIDEO_DIR = Path("/home/u650228/multimodal-baby-fork/data/S_videos_annotations/S_videos")
+LABELED_S_DIR = Path("/home/u650228/multimodal-baby-fork/data/S_multimodal/eval/dev")
+OBJECT_CATEGORIES_ORIGINAL_DIR = Path("/home/u650228/multimodal-baby-fork/data/S_multimodal/object_categories_original")
+OBJECT_CATEGORIES_DIR = Path("/home/u650228/multimodal-baby-fork/data/S_multimodal/object_categories")
 
 pd.options.display.float_format = '{:.2f}'.format
 

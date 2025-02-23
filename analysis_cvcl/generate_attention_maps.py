@@ -53,10 +53,10 @@ def get_random_indices_per_class(dataset, num_samples_per_class):
     return indices
 
 if selection_type == "manual":
-    data_dir = "/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal/eval_manual_filtered_attention_maps"
+    data_dir = "/home/u650228/multimodal-baby-fork/data/S_multimodal/eval_manual_filtered_attention_maps"
     num_samples_per_class = 8
 elif selection_type == "random":
-    data_dir = "/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal/eval_manual_filtered/test"
+    data_dir = "/home/u650228/multimodal-baby-fork/data/S_multimodal/eval_manual_filtered/test"
     num_samples_per_class = 4
     
 normalizer = transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
@@ -80,7 +80,7 @@ for idx, (imgs, labels) in enumerate(clean_dataloader):
     class_names = clean_dataset.classes
     print(class_names[labels[0].item()])
 
-    DATA_DIR = Path("/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal")
+    DATA_DIR = Path("/home/u650228/multimodal-baby-fork/data/S_multimodal")
     VOCAB_FILENAME = DATA_DIR / "vocab.json"
     with open(VOCAB_FILENAME) as f:
         vocab = json.load(f)

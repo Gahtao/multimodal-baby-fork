@@ -20,7 +20,7 @@ splits=("last")
 
 for split in ${splits[@]}; do
     for seed in ${seeds[@]}; do
-        srun python object_categories_linear_decoding.py --train_dir '/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal/object_categories' --num-classes 64 --epochs 100 --seed ${seed} --split ${split}
+        srun python object_categories_linear_decoding.py --train_dir '/home/u650228/multimodal-baby-fork/data/S_multimodal/object_categories' --num-classes 64 --epochs 100 --seed ${seed} --split ${split}
     done
 done
 

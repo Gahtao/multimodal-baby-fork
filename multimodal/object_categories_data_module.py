@@ -17,7 +17,7 @@ from multimodal.multimodal_data_module import MAX_LEN_UTTERANCE, PAD_TOKEN, UNK_
 from multimodal.multimodal_saycam_data_module import MultiModalSAYCamDataModule, DATA_DIR, TRAIN_METADATA_FILENAME
 
 # directories and filenames
-DATA_DIR = Path("/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal")
+DATA_DIR = Path("/home/u650228/multimodal-baby-fork/data/S_multimodal")
 VOCAB_FILENAME = DATA_DIR / "vocab.json"
 OBJECT_CATEGORIES_DATA_DIR = DATA_DIR / "object_categories"
 OBJECT_CATEGORIES_RESIZED_DATA_DIR = DATA_DIR / "object_categories_resized"
