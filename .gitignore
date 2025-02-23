@@ -98,7 +98,7 @@ ipython_config.py
 #   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
 #   commonly ignored for libraries.
-#uv.lock
+uv.lock
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
@@ -159,10 +159,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-
-*.mp4
-.python-version
-uv.lock
 
 # PyCharm
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -247,6 +243,10 @@ fabric.properties
 .pypirc
 
 
+
+# Multimodal-baby project specific
+*.mp4
+.python-version
 checkpoints
 data
 lightning_logs
@@ -258,7 +258,5 @@ logs
 scripts
 wandb
 __pycache__
-.ipynb_checkpoints
-.venv
 *.DS_Store
 *.pyc

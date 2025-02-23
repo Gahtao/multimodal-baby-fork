@@ -37,7 +37,7 @@ import clip
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # directories and filenames
-DATA_DIR = Path("/misc/vlgscratch4/LakeGroup/shared_data/S_multimodal")
+DATA_DIR = Path("/home/u650228/multimodal-baby-fork/data")
 GSHEETS_CREDENTIALS_FILENAME = DATA_DIR / "credentials.json"
 TRANSCRIPT_LINKS_FILENAME = DATA_DIR / "SAYCam_transcript_links.csv"
 TRANSCRIPTS_DIRNAME = DATA_DIR / "transcripts"
